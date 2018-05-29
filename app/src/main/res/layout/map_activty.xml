@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kjs11.dbproject.MapActivity"
+    android:background="#2F9D27">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:id="@+id/layout_mapscreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp">
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="250dp"
+                class="com.google.android.gms.maps.MapFragment" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_mapscreen_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- search bar -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Safe Zone"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아동지킴이"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/place_info"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:textColor="#ffff"
+                android:textSize = "5dp"
+                android:textStyle="bold"
+                android:background="#BCE55C"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                ></TextView>
+
+            <Button
+                android:id="@+id/gps_btn"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:background="#FFE08C"
+                android:textStyle="bold"
+                android:text="내 주변 지토의 집 찾기"
+                android:textColor="#ffffff"
+                android:onClick="gpsBtnClicked"/>
+
+
+            <Button
+                android:id="@+id/show_list_btn"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:onClick="listBtnClicked"
+                android:textAlignment="center"
+                android:background="#FFE08C"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:text="지토의 집 모아보기"
+                />
+
+            <Button
+                android:id="@+id/schoolBtn"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="30dp"
+                android:background="#FFE08C"
+                android:onClick="schoolBtnClicked"
+                android:text="우리 학교 주변 지토의 집 찾기"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

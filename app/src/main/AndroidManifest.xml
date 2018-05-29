@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kjs11.dbproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+
+    <application
+        android:name=".Myfont"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+
+>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA7QUku7ILAgU830Zbsojm30sxbBf6YQ0M" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MapActivity" />
+        <activity android:name=".MapActivity2" />
+        <activity android:name=".ListViewActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            />
+        <activity android:name=".ListViewActivity2"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            />
+        <activity android:name=".GpsAcitivity" />
+        <activity android:name=".SirenActivity" />
+
+        <activity android:name=".GuideActivity2"> </activity>
+        <activity android:name=".GuideActivity3"> </activity>
+        <activity android:name=".GuideActivity4"> </activity>
+        <activity android:name=".GuideActivity5"> </activity>
+        <activity android:name=".GuideActivity6"> </activity>
+        <activity android:name=".GuideActivity7"> </activity>
+        <activity android:name=".GuideActivity8"> </activity>
+        <activity android:name=".GuideActivity9"> </activity>
+        <activity android:name=".GuideActivity10"> </activity>
+        <activity android:name=".GuideActivity11"> </activity>
+        <activity android:name=".GuideActivity1">   </activity>
+        <activity android:name=".RegisterActivity"></activity>
+
+    </application>
+
+</manifest>

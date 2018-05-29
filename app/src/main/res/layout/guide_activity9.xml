@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F9D27">
+
+
+    <ImageView
+        android:id="@+id/guide9"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        app:srcCompat="@drawable/help9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prevBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#FFE08C"
+            android:text="이전"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:onClick="prevBtnClicked9"/>
+
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#FFE08C"
+            android:text="다음"
+            android:textSize="15dp"
+            android:onClick="nextBtnClicked9"/>
+    </LinearLayout>
+</LinearLayout>
